@@ -28,9 +28,9 @@ Create a deployment via terraform
 terraform apply --auto-approve
 ```
 
-Enable HTTP access for service `nginx` in namespace `bob`
+Check the output, it should look like this
 ```
-minikube service -n bob nginx - url
+myapp_ip = "192.168.49.2"
 ```
 
-Enjoy nginx ;)
+Open http://<mapp_ip> in your browser to see nginx welcome page ;)
